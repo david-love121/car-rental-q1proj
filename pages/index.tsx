@@ -11,7 +11,6 @@ import ReviewsScroll from '../components/reviews'
 const Home: NextPage = () => {
   const [navTrans, setNavTrans] = useState(true);
   const onScroll = (ev: Event):void => {
-    console.log("test");
     if (window.scrollY >= 50) {
       setNavTrans(false);
     }
