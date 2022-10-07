@@ -27,8 +27,7 @@ const ReviewsScroll:FC = () => {
         )
     }
     return (
-        
-        <div className="border-t-2 border-gray-800 outline-2 blurg h-[65%] landing-bg">
+        <div className="border-t-2 border-gray-800 outline-2 blobg h-[65%] landing-bg">
             <div className="items-center justify-center h-full">
             <h1 className="text-4xl underline font-bold text-center">See what our customers are saying</h1>
             <div className="carousel carousel-center p-4 space-x-8 outline-2 rounded-boxs ">

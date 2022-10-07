@@ -11,8 +11,11 @@
 .poly-bg-img {
   background-image: url('./../public/landing-low-poly.svg');
 }
-.blurg {
+.blobg {
   background-image: url('./../public/blob-scene-haikei.svg');
+}
+.blurg {
+  background-image: url('./../public/blurry-gradient-haikei.svg');
 }
 body {
   overflow-x:hidden;

@@ -1,6 +1,7 @@
 import React, {FC, useEffect, useState} from 'react';
+import Link from 'next/link';
 interface props {
-    
+    dark: boolean;
 }
 const Header:FC<props> = (props) => {
     //Based on navbar provided in daisyUI docs
@@ -18,10 +19,14 @@ const Header:FC<props> = (props) => {
       window.addEventListener('scroll', onScroll);
     })
     const navC = ():string => {
-        if (navTrans == true) {
-            return "navbar top-0 z-50 bg-transparent";
+      let darkString = "";
+      if (props.dark) {
+        darkString = " text-black";
+      }  
+      if (navTrans == true) {
+            return "navbar top-0 z-50 bg-transparent" + darkString;
         } 
-        return "navbar bg-primary-content sticky top-0 z-50";
+        return "navbar bg-primary-content sticky top-0 z-50" + darkString;
     }
     return (
         <div className={navC()}>
@@ -37,7 +42,9 @@ const Header:FC<props> = (props) => {
           </div>
         </div>
         <div className="navbar-center">
-          <a className="btn btn-ghost normal-case text-xl">IMSA Rentals</a>
+          <Link href="/">
+            <a className="btn btn-ghost normal-case text-xl">IMSA Rentals</a>
+          </Link>
         </div>
         <div className="navbar-end">
           <button className="btn btn-ghost btn-circle">
