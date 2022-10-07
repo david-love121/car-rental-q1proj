@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  color-scheme: only light;
 }
 .poly-bg-img {
   background-image: url('./../public/landing-low-poly.svg');
@@ -17,6 +18,6 @@
 .blurg {
   background-image: url('./../public/blurry-gradient-haikei.svg');
 }
-body {
+html, body {
   overflow-x:hidden;
 }
