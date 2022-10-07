@@ -1,11 +1,24 @@
-import React, {FC} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 interface props {
-    transparent: boolean;
+    
 }
 const Header:FC<props> = (props) => {
     //Based on navbar provided in daisyUI docs
+    const [navTrans, setNavTrans] = useState(true);
+    const onScroll = (ev: Event):void => {
+      if (window.scrollY >= 50) {
+        setNavTrans(false);
+      }
+      if (window.scrollY < 50) {
+        setNavTrans(true);
+        
+      }
+    } 
+    useEffect(():void => {
+      window.addEventListener('scroll', onScroll);
+    })
     const navC = ():string => {
-        if (props.transparent == true) {
+        if (navTrans == true) {
             return "navbar top-0 z-50 bg-transparent";
         } 
         return "navbar bg-primary-content sticky top-0 z-50";

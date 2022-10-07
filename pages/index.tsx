@@ -9,25 +9,11 @@ import ReviewsScroll from '../components/reviews'
 
 
 const Home: NextPage = () => {
-  const [navTrans, setNavTrans] = useState(true);
-  const onScroll = (ev: Event):void => {
-    if (window.scrollY >= 50) {
-      setNavTrans(false);
-    }
-    if (window.scrollY < 50) {
-      setNavTrans(true);
-      
-    }
-  } 
-  useEffect(():void => {
-    window.addEventListener('scroll', onScroll);
-  })
   return (
     <div className="h-screen landing-bg poly-bg-img">
-      <Header transparent={navTrans}/>
+      <Header/>
       <Landing />
       <ReviewsScroll />
-      <Landing />
     </div>
   )
 }
