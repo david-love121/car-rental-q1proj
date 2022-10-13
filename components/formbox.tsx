@@ -83,7 +83,7 @@ const FormBox:FC<formProps> = (formProps) => {
     return (
         <div className="w-[85%] h-[85%] bg-white rounded-2xl shadow-2xl flex mx-auto my-auto justify-center text-black">
                 <div className="flex-initial flex flex-col w-[50%] justify-center items-center border-r-2">
-                    <h1 className="text-3xl">1. Let's create an account.</h1>
+                    <h1 className="text-3xl">1. Let&apos;s create an account.</h1>
                     <h2 className="text-xl text-gray-500">After this you can select a car.</h2>
                 </div>
                 <div className="flex-col flex w-[50%] justify-center items-center">
@@ -127,7 +127,7 @@ const FormBox:FC<formProps> = (formProps) => {
             <div className="w-[65%] h-[85%] bg-white rounded-2xl shadow-2xl flex flex-col items-center mx-auto my-auto text-black">
                 <div className="border-b-2 w-full flex flex-col items-center">
                     <h1 className="text-2xl mt-4 mx-auto">Order Recieved!</h1>
-                    <h2 className="text-xl mb-4 text-gray-300">We'll get your order to you within 3 business days.</h2>
+                    <h2 className="text-xl mb-4 text-gray-300">We will get your order to you within 3 business days.</h2>
                 </div>
                 <div className="w-full flex flex-col h-full">
                     <h1 className="text-2xl m-4">Your order:</h1>
