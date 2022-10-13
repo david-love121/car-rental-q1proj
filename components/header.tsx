@@ -20,13 +20,15 @@ const Header:FC<props> = (props) => {
     })
     const navC = ():string => {
       let darkString = "";
+      let bgstring = " bg-primary-content"
       if (props.dark) {
         darkString = " text-black";
+        bgstring = " bg-primary"
       }  
       if (navTrans == true) {
             return "navbar top-0 z-50 bg-transparent" + darkString;
         } 
-        return "navbar bg-primary-content sticky top-0 z-50" + darkString;
+        return "navbar sticky top-0 z-50" + darkString + bgstring;
     }
     return (
         <div className={navC()}>
@@ -48,7 +50,7 @@ const Header:FC<props> = (props) => {
         </div>
         <div className="navbar-end">
           <button className="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          <Link href="/"><svg xmlns="http://www.w3.org/2000/svg" fill={props.dark ? "#000000" : "#FFFFFF"} viewBox="0 0 24 24" width="24px" height="24px"><path d="M 12 2.0996094 L 1 12 L 4 12 L 4 21 L 11 21 L 11 15 L 13 15 L 13 21 L 20 21 L 20 12 L 23 12 L 12 2.0996094 z M 12 4.7910156 L 18 10.191406 L 18 11 L 18 19 L 15 19 L 15 13 L 9 13 L 9 19 L 6 19 L 6 10.191406 L 12 4.7910156 z"/></svg></Link>
           </button>
         </div>
       </div>

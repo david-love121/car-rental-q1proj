@@ -29,7 +29,7 @@ const Landing:FC<props> = (props) => {
                 <CheckmarkText text="No hassle sign up and rental"/>
                 </div>
                 <div className="flex justify-center items-center mt-14">
-                    <button id="go-btn" className="btn btn-outline btn-primary mx-2">More info</button>
+                    
                     <Link href="/form" passHref>
                         <button id="go-btn" className="btn btn-primary mx-2">Try it yourself</button>
                     </Link>
