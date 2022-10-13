@@ -6,7 +6,7 @@ import miataImg from "../public/mazdamiata.png";
 import wrxImg from "../public/subaruwrx.png";
 import supraImg from "../public/toyotasupra.png";
 import teslaImg from "../public/teslamodel3.webp";
-import hondaImg from "../public/hondaOdyssey.webp";
+import hondaImg from "../public/HondaOdyssey.webp";
 import leafImg from "../public/NissanLeaf.webp";
 import altimaImg from "../public/NissanAltima.png";
 import miniImg from "../public/MiniCooper.webp";
